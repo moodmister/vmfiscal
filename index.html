@@ -6,11 +6,45 @@
     <meta name="viewport" content="width=device-width, inital-scale=1">
 
     <title>VM Fiscal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="mycss.css">
 
 </head>
 
 <body>
+    <div class="w3-bar w3-black">
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="./CashRegs.html" class="w3-bar-item w3-button w3-mobile">Фискални устройства</a>
+            <div class="w3-dropdown-hover w3-mobile">
+                <button class="w3-button">Microinvest продукти <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <a href="./Software.html" class="w3-bar-item w3-button w3-mobile">Софтуер</a>
+                    <a href="./Packs.html" class="w3-bar-item w3-button w3-mobile">Пакети</a>
+                </div>
+            </div>
+            <a href="./Other.html" class="w3-bar-item w3-button w3-mobile">Други услуги и продукти</a>
+            <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button w3-mobile" target="_blank">Наредба Н-18</a>
+            <a href="./Contacts.html" class="w3-bar-item w3-button w3-mobile">Контакти</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
 </body>
 
 </html>

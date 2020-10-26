@@ -475,14 +475,14 @@ a {
 
 .w3-dropdown-hover:first-child,
 .w3-dropdown-click:hover {
-    background-color: #ccc;
-    color: #000
+    background-color: #202020;
+    color: #ffffff
 }
 
 .w3-dropdown-hover:hover>.w3-button:first-child,
 .w3-dropdown-click:hover>.w3-button:first-child {
-    background-color: #ccc;
-    color: #000
+    background-color: #202020;
+    color: #fff
 }
 
 .w3-dropdown-content {
@@ -1430,8 +1430,8 @@ a {
 }
 
 .w3-button:hover {
-    color: #000!important;
-    background-color: #ccc!important
+    color: #ffffff!important;
+    background-color: rgb(61, 61, 61)!important
 }
 
 .w3-transparent,
@@ -1607,7 +1607,7 @@ a {
 .w3-dark-gray,
 .w3-hover-dark-gray:hover {
     color: #fff!important;
-    background-color: #616161!important
+    background-color: #202020!important
 }
 
 .w3-pale-red,
