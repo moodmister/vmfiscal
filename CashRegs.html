@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>VM Fiscal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="mycss.css">
+</head>
+
+<body>
+    <div class="w3-bar w3-black" style="position:fixed">
+        <a href="#" class="w3-bar-item w3-button">Начало</a>
+        <a href="./CashRegs.html" class="w3-bar-item w3-button w3-hide-small">Касови апарати</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-bar-item w3-button w3-hide-small">Microinvest продукти</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
+                <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+                <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+            </div>
+        </div>
+        <a href="./Services.html" class="w3-bar-item w3-button w3-hide-small">Други услуги и продукти</a>
+        <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button w3-hide-small">Наредба Н-18</a>
+        <a href="./Contacts.html" class="w3-bar-item w3-button w3-hide-small">Контакти</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction('demo')">&#9776;</a>
+    </div>
+
+    <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-top:35px; position:fixed">
+        <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
+        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+            Microinvest продукти</button>
+
+        <div id="Demo1" class="w3-container w3-hide">
+            <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+            <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+        </div>
+        <a href="./Services.html" class="w3-bar-item w3-button">Други услуги и продукти</a>
+        <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button">Наредба Н-18</a>
+        <a href="./Contacts.html" class="w3-bar-item w3-button">Контакти</a>
+    </div>
+
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+    <div class="w3-container w3-mobile w3-card" style="padding-top:100px; background-color: #ffffffce;">
+        <img src="Images/CashRegs/S25/S25-blck.png" alt="s25" height="150px" width="150px">
+        <h3>TREMOL S25</h3>
+        <p>Мобилен, удобен и лесен</p>
+    </div>
+</body>
+
+</html>
