@@ -24,17 +24,26 @@ a {
 
 h1 {
     font-family: Play-Bold;
+    background-color: #ffffffad;
+    margin-top: 500px;
     font-size: 56px;
 }
 
-h1 {
-    margin-top: 500px;
+h2 {
+    font-family: Play;
+    background-color: #ffffffad;
     margin-bottom: 500px;
+}
+
+.hcontainer {
+    background-color: #ffffffad;
 }
 
 @media screen and (max-width:1024px) {
     h1 {
         margin-top: 250px;
+    }
+    h2 {
         margin-bottom: 250px;
     }
 }
