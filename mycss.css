@@ -60,6 +60,9 @@ h5 {
     .hdesc {
         margin-bottom: 200px;
     }
+}
+
+@media screen and(max-width:768px) {
     p {
         font-size: 15px;
     }
