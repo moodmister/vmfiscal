@@ -49,6 +49,10 @@ h5 {
     margin-bottom: 400px;
 }
 
+.height {
+    height: 430px;
+}
+
 @media screen and (max-width:1024px) {
     h1 {
         margin-top: 200px;
@@ -65,5 +69,8 @@ h5 {
 @media screen and(max-width:768px) {
     p {
         font-size: 15px;
+    }
+    .height {
+        height: 215px;
     }
 }
