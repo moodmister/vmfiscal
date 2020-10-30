@@ -12,7 +12,7 @@
 
 <body>
     <div class="w3-bar w3-black" style="position:fixed; z-index:10">
-        <a href="#" class="w3-bar-item w3-button">Начало</a>
+        <a href="./index.html" class="w3-bar-item w3-button">Начало</a>
         <a href="./CashRegs.html" class="w3-bar-item w3-button w3-hide-small">Касови апарати</a>
         <div class="w3-dropdown-hover">
             <button class="w3-bar-item w3-button w3-hide-small">Microinvest продукти</button>
@@ -24,7 +24,7 @@
         <a href="./Services.html" class="w3-bar-item w3-button w3-hide-small">Други услуги и продукти</a>
         <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button w3-hide-small">Наредба Н-18</a>
         <a href="./Contacts.html" class="w3-bar-item w3-button w3-hide-small">Контакти</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction('demo')">&#9776;</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="ShowFunc('demo')">&#9776;</a>
     </div>
 
     <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-top:35px; position:fixed">
@@ -41,18 +41,8 @@
         <a href="./Contacts.html" class="w3-bar-item w3-button">Контакти</a>
     </div>
 
-    <script>
-        function myFunction(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
-
-    <div class="w3-container hcontainer w3-mobile" style="padding-top:100px">
+    <div class="w3-container hcontainer w3-mobile" style="padding-top:100px;padding-bottom:100px;">
+        <!--H-18-->
         <button onclick="ShowFunc('acc1')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Наредба Н-18"</button>
         <div id="acc1" class="w3-container w3-hide w3-mobile">
             <p>Пакетът "Наредба Н-18" е подходящ за малък и/или среден търговски обект като осигурява одобрен от НАП СУПТО продукт, към който в бъдеще може да се добавяте допълнителни работни места бързо и лесно. Гарантира интегритет на базата данни, чрез
@@ -65,12 +55,12 @@
                 <li>1 х лиценз за работа с MSSQL база данни**</li>
                 <li>1 x Хардуерен лиценз</li>
             </ul>
-            <p><strong>Пакетна цена: 289 EUR</strong></p>
-            <p><strong>Пакетна цена: 289 EUR</strong></p>
+            <p><strong>Пакетна цена: 678 лв.</strong></p>
             <p>* Изискването за архивиране и съхраняване на данни е записано в Наредба Н-18, Приложение 29, точка 17.
                 <br> ** Препоръчва се инсталация на MS SQL сървър за работа. База данни MS Access не може да гарантира интегритет на данните. Изискването е записано в Наредба Н-18, Приложение 29, точка 2.
             </p>
         </div>
+        <!--FISCAL+-->
         <button onclick="ShowFunc('acc2')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Fiscal+"</button>
         <div id="acc2" class="w3-container w3-hide w3-mobile">
             <p>Пакетът Fiscal+ е подходящ за малък и/или среден търговски обект като включва всички модули, предназначени за работа в магазин или ресторант, където има инсталирани две работни места. Пакетът включва пълна комплектация за две работни места:
@@ -78,26 +68,66 @@
             <ul class="w3-ul">
                 <li>1 x Microinvest Склад Pro</li>
                 <li>1 x Microinvest Склад Pro Light (ресторант или търговски обект)</li>
-                <li>1 x Microinvest Архиватор Pro *</li>
+                <li>1 x Microinvest Архиватор Pro</li>
                 <li>1 x Едногодишен договор за облачно архивиране*</li>
                 <li>1 х лиценз за работа с MSSQL база данни**</li>
+                <li>2 x Хардуерен лиценз</li>
+            </ul>
+            <p>Стандартна цена: 1100 лв.<br>
+                <strong>Пакетна цена: 870 лв.</strong>
+            </p>
+        </div>
+        <!--HOTEL+RESTAURANT-->
+        <button onclick="ShowFunc('acc3')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Хотел+Ресторант"</button>
+        <div id="acc3" class="w3-container w3-hide w3-mobile">
+            <p>Пакет „Хотел+Ресторант“ е подходящ за хотел с ресторант, бар или лоби, като включва всички модули за управление на дейностите на рецепция и по обработка на поръчки в ресторанта или лоби бара. Допълнително удобство е, че хотелският софтуер
+                предлага връзка в реално време с ресторантския софтуер, като по този начин може да се извършва начисляване на сметки към стая и възможност за приключване на сметка от Microinvest Хотел Pro.
+            </p>
+            <ul class="w3-ul">
+                <li>1 х Microinvest Хотел Pro</li>
+                <li>1 x Microinvest Склад Pro</li>
+                <li>1 x Microinvest Склад Pro Light - ресторант</li>
+                <li>1 x Microinvest Архиватор Pro</li>
+                <li>1 х лиценз за работа с MSSQL база данни**</li>
+                <li>3 x Хардуерен лиценз</li>
+            </ul>
+            <p>Стандартна цена: 1705 лв.<br>
+                <strong>Пакетна цена: 1476 лв.</strong>
+            </p>
+        </div>
+        <!--TARGET-->
+        <button onclick="ShowFunc('acc4')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Target+"</button>
+        <div id="acc4" class="w3-container w3-hide w3-mobile">
+            <p>Пакетът Target+ е подходящ за малък търговски обект и включва всички модули, предназначени за работа в магазин, където има инсталиран само един компютър. Пакетът включва пълна комплектация за едно работно място:
+            </p>
+            <ul class="w3-ul">
+                <li>1 x Microinvest Склад Pro</li>
+                <li>1 x Microinvest Склад Pro Light</li>
+                <li>1 x Microinvest Архиватор Pro</li>
+                <li>1 х лиценз за работа с MSSQL база данни</li>
                 <li>1 x Хардуерен лиценз</li>
             </ul>
-            <p>Стандартна цена: 465,80 EUR<br>
-                <strong>Пакетна цена: 369 EUR</strong>
+            <p>
+                <strong>Пакетна цена: 800 лв.</strong>
+            </p>
+        </div>
+        <!--ONLINESHOP-->
+        <button onclick="ShowFunc('acc5')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Online Магазин"</button>
+        <div id="acc5" class="w3-container w3-hide w3-mobile">
+            <p>Пакетът "Онлайн магазин" е подходящ за електронна търговия и включва всички модули, предназначени за обработка и приемане на поръчки от електронен магазин, с осигурена връзка със СУПТО софтуер. Пакетът включва:
+            </p>
+            <ul class="w3-ul">
+                <li>1 x Microinvest Склад Pro</li>
+                <li>1 x Microinvest Utility Center Plus</li>
+                <li>1 x Microinvest Архиватор Pro</li>
+                <li>1 х лиценз за работа с MSSQL база данни</li>
+            </ul>
+            <p>Стандартна цена: 1285 лв.<br>
+                <strong>Пакетна цена: 915 лв.</strong>
             </p>
         </div>
     </div>
-    <script>
-        function ShowFunc(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
+    <script src="ShowFunc.js"></script>
 </body>
 
 </html>

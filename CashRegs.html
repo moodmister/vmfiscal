@@ -23,12 +23,12 @@
         <a href="./Services.html" class="w3-bar-item w3-button w3-hide-small">Други услуги и продукти</a>
         <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" target="_blank" class="w3-bar-item w3-button w3-hide-small">Наредба Н-18</a>
         <a href="./Contacts.html" class="w3-bar-item w3-button w3-hide-small">Контакти</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction('demo')">&#9776;</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="ShowFunc('demo')">&#9776;</a>
     </div>
 
     <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-top:35px; position:fixed">
         <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
-        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+        <button onclick="ShowFunc('Demo1')" class="w3-button w3-block w3-left-align">
             Microinvest продукти</button>
 
         <div id="Demo1" class="w3-container w3-hide">
@@ -40,16 +40,8 @@
         <a href="./Contacts.html" class="w3-bar-item w3-button">Контакти</a>
     </div>
 
-    <script>
-        function myFunction(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
+    <script src="ShowFunc.js"></script>
+
     <a href="./S25.html" style="text-decoration: none;">
         <div class="w3-card-4 hcontainer w3-third w3-hover-dark-gray" style=" padding-top: 100px">
             <div class="w3-container w3-center w3-mobile">
