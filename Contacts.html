@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VM Fiscal</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="mycss.css">
+
+    <style>
+        .mapouter {
+            margin-top: 10px;
+            overflow: hidden;
+            position: relative;
+            text-align: right;
+            height: 370px;
+            width: 370px;
+        }
+        
+        .gmap_canvas {
+            overflow: hidden;
+            background: none!important;
+            height: 370px;
+            width: 370px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w3-bar w3-black" style="position:fixed; z-index:10">
+        <a href="index.html" class="w3-bar-item w3-button">Начало</a>
+        <a href="./CashRegs.html" class="w3-bar-item w3-button w3-hide-small">Касови апарати</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-bar-item w3-button w3-hide-small">Microinvest продукти</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
+                <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+                <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+            </div>
+        </div>
+        <a href="./Services.html" class="w3-bar-item w3-button w3-hide-small">Други услуги и продукти</a>
+        <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button w3-hide-small">Наредба Н-18</a>
+        <a href="./Contacts.html" class="w3-bar-item w3-button w3-hide-small">Контакти</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="ShowFunc('demo')">&#9776;</a>
+    </div>
+
+    <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-top:35px; position:fixed">
+        <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
+        <button onclick="ShowFunc('Demo1')" class="w3-button w3-block w3-left-align">
+        Microinvest продукти</button>
+
+        <div id="Demo1" class="w3-container w3-hide">
+            <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+            <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+        </div>
+        <a href="./Services.html" class="w3-bar-item w3-button">Други услуги и продукти</a>
+        <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button">Наредба Н-18</a>
+        <a href="./Contacts.html" class="w3-bar-item w3-button">Контакти</a>
+    </div>
+
+
+
+    <div class="w3-container hcontainer w3-center" style="padding-top:100px;padding-bottom: 100px;">
+        <div class="w3-half w3-mobile">
+            <h2>Контакти</h2>
+            <p>Алфа - ВМ Консулт ЕООД<br> e-mail: info@betaconsultbg.com<br> Тел.: 0894 631 899<br> Тел.: 0888 615 529<br> Русе, пл. Оборище 9, ет.6<br> офис Бета Консулт</p>
+        </div>
+        <div class="w3-rest w3-mobile w3-centered">
+            <div class="fb-page" data-href="https://www.facebook.com/VMFiscal/" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/VMFiscal/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/VMFiscal/">VM Fiscal - Касови Апарати - гр. Русе</a></blockquote>
+            </div>
+            <div class="mapouter w3-hide-small">
+                <div class="gmap_canvas"><iframe width="370" height="370" id="gmap_canvas" src="https://maps.google.com/maps?q=VMFiscal&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://putlocker-is.org"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v8.0" nonce="TC8J4eYl"></script>
+    <script src="ShowFunc.js">
+    </script>
+</body>
+
+</html>
