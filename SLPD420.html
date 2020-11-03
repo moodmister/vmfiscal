@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VM FISCAL</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./mycss.css">
+    <link rel="icon" href="Images/logo.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180725857-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-180725857-1');
+    </script>
+</head>
+
+<body>
+    <div class="w3-bar w3-black" style="position:fixed;z-index:10">
+        <a href="./index.html" class="w3-bar-item w3-button">Начало</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-bar-item w3-button w3-hide-small">Фискални устройства</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
+                <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
+                <a href="./FPrinters.html" class="w3-bar-item w3-button">Фискални принтери</a>
+                <a href="./POS.html" class="w3-bar-item w3-button">POS принтери</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <button class="w3-bar-item w3-button w3-hide-small">Microinvest продукти</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
+                <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+                <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+            </div>
+        </div>
+        <a href="./Services.html" class="w3-bar-item w3-button w3-hide-small">Други услуги и продукти</a>
+        <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button w3-hide-small">Наредба Н-18</a>
+        <a href="./Contacts.html" class="w3-bar-item w3-button w3-hide-small">Контакти</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="ShowFunc('demo')">&#9776;</a>
+    </div>
+
+    <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-top:35px; position:fixed">
+        <button onclick="ShowFunc('Demo1')" class="w3-button w3-block w3-left-align">Фискални устройства</button>
+        <div id="Demo1" class="w3-container w3-hide">
+            <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
+            <a href="./FPrinters.html" class="w3-bar-item w3-button">Фискални принтери</a>
+            <a href="./POS.html" class="w3-bar-item w3-button">POS принтери</a>
+        </div>
+        <button onclick="ShowFunc('Demo2')" class="w3-button w3-block w3-left-align">Microinvest продукти</button>
+        <div id="Demo2" class="w3-container w3-hide">
+            <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+            <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+        </div>
+        <a href="./Services.html" class="w3-bar-item w3-button">Други услуги и продукти</a>
+        <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button">Наредба Н-18</a>
+        <a href="./Contacts.html" class="w3-bar-item w3-button">Контакти</a>
+    </div>
+    <script src="ShowFunc.js"></script>
+
+    <div class="w3-container hcontainer" style="padding-top: 100px; margin: 0px 10px">
+        <h2>Етикиращ принтер Bixolon SLP-D420</h2>
+        <div class="w3-content w3-centered w3-mobile" style="max-width:1000px">
+            <img class="mySlides" src="./Images/POS/slpd420.png" style="width:50%">
+            <!--<img class="mySlides" src="./Images/CashRegs/S25/S25-blue.png" style="width:50%;display:none">
+            <img class="mySlides" src="./Images/CashRegs/S25/S25-orng.png" style="width:50%;display:none">
+            <img class="mySlides" src="./Images/CashRegs/S25/S25-yllw.png" style="width:50%;display:none">
+            <img class="mySlides" src="./Images/CashRegs/S25/S25-wht.png" style="width:50%;display:none">
+            <img class="mySlides" src="./Images/CashRegs/S25/S25-red.png" style="width:50%;display:none">
+            -->
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/POS/slpd420.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                </div>
+                <!--<div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-blue.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                </div>
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-orng.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                </div>
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-yllw.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+                </div>
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-wht.png" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+                </div>
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-red.png" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+                </div>-->
+            </div>
+        </div>
+
+        <p>
+            Принтерът BIXOLON SLP-D420 е надеждно и доказано устройство за отпечатване на етикети директно на щанда. Перфектно решение за етикиращ принтер в широк спектър от системи, които се нуждаят от висока надеждност на разумна цена. Предимството на автоматично
+            разпознаване на програмните езици SLCS, EPL II, и ZPL II за по-голяма съвместимост с други устройства.Доказан с издръжливостта си, този принтер е отново в каталога на Тремол с по-новата си обновена версия - Bixolon SLP, изразена с бърз и икономичен
+            печат.
+        </p>
+        <table class="w3-table w3-border">
+            <tr>
+                <th>
+                    <strong>Характеристики</strong>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Клавиатура	</strong>
+                </td>
+                <td>
+                    2 бутона за управление, светлинна индикация за готовност, обща грешка
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Принтер	</strong>
+                </td>
+                <td>
+                    Easy Load Direct Thermal<br>152 mm/s
+                </td>
+            </tr>
+            <tr>
+                <td>Баркод стандарти</td>
+                <td> UPC-A, UPC-E, EAN8, EAN13, CODE39, ITF, CODABAR, CODE9, CODE128, PDF417, QRCODE</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Термохартия</strong>
+                </td>
+                <td>
+                    25-116 мм ширина <br>130 мм диаметър
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Захранване</strong>
+                </td>
+                <td>
+                    DC 24V - 2.5A
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Размери</strong>
+                </td>
+                <td>
+                    237х146х130 мм, 1.5 кг.
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-opacity-off";
+            }
+        </script>
+
+    </div>
+    <div class="w3-container w3-black w3-center w3-mobile" style="margin-top:10px">
+        <h2 style="color:#fffff0">Контакти</h2>
+        <p>Алфа - ВМ Консулт ЕООД<br>Тел.: 0894 631 899<br> Тел.: 0888 615 529<br> Русе, пл. Оборище 9, ет.6<br> офис Бета Консулт<br></p>
+    </div>
+</body>
+
+</html>

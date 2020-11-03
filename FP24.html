@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VM FISCAL</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./mycss.css">
+    <link rel="icon" href="Images/logo.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180725857-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-180725857-1');
+    </script>
+</head>
+
+<body>
+    <div class="w3-bar w3-black" style="position:fixed;z-index:10">
+        <a href="./index.html" class="w3-bar-item w3-button">Начало</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-bar-item w3-button w3-hide-small">Фискални устройства</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
+                <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
+                <a href="./FPrinters.html" class="w3-bar-item w3-button">Фискални принтери</a>
+                <a href="./POS.html" class="w3-bar-item w3-button">POS принтери</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <button class="w3-bar-item w3-button w3-hide-small">Microinvest продукти</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
+                <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+                <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+            </div>
+        </div>
+        <a href="./Services.html" class="w3-bar-item w3-button w3-hide-small">Други услуги и продукти</a>
+        <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button w3-hide-small">Наредба Н-18</a>
+        <a href="./Contacts.html" class="w3-bar-item w3-button w3-hide-small">Контакти</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="ShowFunc('demo')">&#9776;</a>
+    </div>
+
+    <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-top:35px; position:fixed">
+        <button onclick="ShowFunc('Demo1')" class="w3-button w3-block w3-left-align">Фискални устройства</button>
+        <div id="Demo1" class="w3-container w3-hide">
+            <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
+            <a href="./FPrinters.html" class="w3-bar-item w3-button">Фискални принтери</a>
+            <a href="./POS.html" class="w3-bar-item w3-button">POS принтери</a>
+        </div>
+        <button onclick="ShowFunc('Demo2')" class="w3-button w3-block w3-left-align">Microinvest продукти</button>
+        <div id="Demo2" class="w3-container w3-hide">
+            <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+            <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+        </div>
+        <a href="./Services.html" class="w3-bar-item w3-button">Други услуги и продукти</a>
+        <a href="https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=130338" class="w3-bar-item w3-button">Наредба Н-18</a>
+        <a href="./Contacts.html" class="w3-bar-item w3-button">Контакти</a>
+    </div>
+    <script src="ShowFunc.js"></script>
+
+    <div class="w3-container hcontainer" style="padding-top: 100px; margin: 0px 10px">
+        <h2>Tremol FP24</h2>
+        <div class="w3-content w3-centered w3-mobile" style="max-width:1000px">
+            <img class="mySlides" src="./Images/FPrinters/fp24.png" style="width:50%">
+            <!--<img class="mySlides" src="./Images/CashRegs/S25/S25-blue.png" style="width:50%;display:none">
+            <img class="mySlides" src="./Images/CashRegs/S25/S25-orng.png" style="width:50%;display:none">
+            <img class="mySlides" src="./Images/CashRegs/S25/S25-yllw.png" style="width:50%;display:none">
+            <img class="mySlides" src="./Images/CashRegs/S25/S25-wht.png" style="width:50%;display:none">
+            <img class="mySlides" src="./Images/CashRegs/S25/S25-red.png" style="width:50%;display:none">
+            -->
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/FPrinters/fp24.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                </div>
+                <!--<div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-blue.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                </div>
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-orng.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                </div>
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-yllw.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+                </div>
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-wht.png" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+                </div>
+                <div class="w3-col s2">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="./Images/CashRegs/S25/S25-red.png" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+                </div>-->
+            </div>
+        </div>
+
+        <p>
+            Най-малкият мобилен фискален принтер разработен от Тремол. С издръжливата си батерия, бърз печатащ механизъм, WiFi и Bluetooth връзка с таблети, смартфони и мобилни компютри, TREMOL FP24 е перфектното джобно устройство за динамичен бизнес. Предлага се
+            с кожен калъф, лесноприкачващ се за колан и удобен за носене на кръста. Принтерът има възможност за работа чрез захранване от вградени акумулатори и зареждане от стандартен USB 5V адаптер.
+        </p>
+        <table class="w3-table w3-border">
+            <tr>
+                <th>
+                    <strong>Характеристики</strong>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Фискална памет</strong>
+                </td>
+                <td>
+                    2000 записа за дневни отчети + 270 за специални събития
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Часовник</strong>
+                </td>
+                <td>
+                    Минимум 1500 часа без захранване
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Клавиатура	</strong>
+                </td>
+                <td>
+                    2 бутона за управление, 3 индикатора за готовност, грешка и ниво на батерията
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Принтер	</strong>
+                </td>
+                <td>
+                    Easy Load Line Thermal 8 dots/mm <br>скорост: до 75 mm/sec <br>32 символа на ред
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Термохартия</strong>
+                </td>
+                <td>
+                    58мм широчина <br> 42мм диаметър
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Батерия</strong>
+                </td>
+                <td>
+                    Вграден пакет акумулатори 7,4V 1600mAh с възможност за зареждане от универсален USB 5V адаптер (порт)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Размери</strong>
+                </td>
+                <td>
+                    112х87х49 мм; 0,220 кг
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-opacity-off";
+            }
+        </script>
+
+    </div>
+    <div class="w3-container w3-black w3-center w3-mobile" style="margin-top:10px">
+        <h2 style="color:#fffff0">Контакти</h2>
+        <p>Алфа - ВМ Консулт ЕООД<br>Тел.: 0894 631 899<br> Тел.: 0888 615 529<br> Русе, пл. Оборище 9, ет.6<br> офис Бета Консулт<br></p>
+    </div>
+</body>
+
+</html>
