@@ -25,7 +25,7 @@ a {
 h1 {
     font-family: Play-Bold;
     background-color: #ffffffad;
-    margin-top: 400px;
+    margin-top: 15%;
     font-size: 56px;
 }
 
@@ -46,7 +46,7 @@ h5 {
 }
 
 .hdesc {
-    margin-bottom: 400px;
+    margin-bottom: 15%;
 }
 
 .height {
