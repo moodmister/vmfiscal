@@ -20,6 +20,18 @@
 
         gtag('config', 'G-2W04MBHJT6');
     </script>
+
+    <style>
+        .displayMode {
+            width: 480px;
+        }
+        
+        @media screen and (max-width: 500px) {
+            .displayMode {
+                width: 280px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -64,92 +76,135 @@
     </div>
 
     <div class="w3-container hcontainer w3-mobile" style="padding-top:100px;padding-bottom:100px;">
-        <!--H-18-->
-        <button onclick="ShowFunc('acc1')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Наредба Н-18"</button>
+        <!--Издаване на бележка-->
+        <button onclick="ShowFunc('acc1')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Как се издава касова бележка?</button>
         <div id="acc1" class="w3-container w3-hide w3-mobile">
-            <p>Пакетът "Наредба Н-18" е подходящ за малък и/или среден търговски обект като осигурява одобрен от НАП СУПТО продукт, към който в бъдеще може да се добавяте допълнителни работни места бързо и лесно. Гарантира интегритет на базата данни, чрез
-                облачно архивиране и съхранение на данните, което е ключово изискване в Наредба H-18. Пакетът включва пълна комплектация за едно работно място и продуктите не могат да бъдат разделяни:
-            </p>
-            <ul class="w3-ul">
-                <li>1 x Microinvest Склад Pro</li>
-                <li>1 x Microinvest Архиватор Pro *</li>
-                <li>1 x Едногодишен договор за облачно архивиране*</li>
-                <li>1 х лиценз за работа с MSSQL база данни**</li>
-                <li>1 x Хардуерен лиценз</li>
-            </ul>
-            <p><strong>Пакетна цена: 678 лв.</strong></p>
-            <p>* Изискването за архивиране и съхраняване на данни е записано в Наредба Н-18, Приложение 29, точка 17.
-                <br> ** Препоръчва се инсталация на MS SQL сървър за работа. База данни MS Access не може да гарантира интегритет на данните. Изискването е записано в Наредба Н-18, Приложение 29, точка 2.
-            </p>
+            <img src="./Images/Instructions/btnMode.webp" style="height: 30px; width: 30px"> : Превключва режимите на работа.<br>
+            <br>
+            <img src="./Images/Instructions/dspMode.webp" class="displayMode">
+            <br><br>
+            <img src="./Images/Instructions/dspModeOld.webp" class="displayMode">
+            <br><br> Стандартна парола: <img src="./Images/Instructions/btn0.webp" style="height: 30px; width: 30px">, <img src="./Images/Instructions/btnTotal.webp" style="width:30px">
+
+            <br><br>
+            <img src="./Images/Instructions/btnDep1.webp" style="height:30px;"> . . <img src="./Images/Instructions/btnDep10.webp" style="height: 30px;"> : Продажба от департамент с количество=1 и програмирана цена.
+
+
+            <br><br> ЦЕНА, <img src="./Images/Instructions/btnDep1.webp" style="height:30px;"> . . <img src="./Images/Instructions/btnDep10.webp" style="height: 30px;"> : Продажба от департамент с количество=1 и въведената цена.
+
+            <br><br> КОЛИЧЕСТВО, <img src="./Images/Instructions/btnQty.webp" style="height:30px;">, ЦЕНА, <img src="./Images/Instructions/btnDep1.webp" style="height:30px;"> . . <img src="./Images/Instructions/btnDep10.webp" style="height: 30px;"> :
+            Продажба от департамент с въведени количество и въведената цена.
+
+            <br><br> КОЛИЧЕСТВО, <img src="./Images/Instructions/btnQty.webp" style="height:30px;">, НОМЕР, <img src="./Images/Instructions/btnPlu.webp" style="height:30px;"> : Продажба от артикул с въведеното количество и прогр.цена
+
+            <br><br> НОМЕР, <img src="./Images/Instructions/btnQty.webp" style="height:30px;"> :Продажба от артикул с количество=1 и програмирана цена
+
+            <br><br>КОЛИЧЕСТВО, <img src="./Images/Instructions/btnQty.webp" style="height:30px;">, ЦЕНА, <img src="./Images/Instructions/btnVD.webp" style="height:30px;">, НОМЕР, <img src="./Images/Instructions/btnPlu.webp" style="height:30px;"> : Продажба
+            от артикул с въвед. количество и цена.
+
+            <br><br><img src="./Images/Instructions/btnCL.webp" style="height:30px;"> : Изчиства показанието на дисплея.
+
+            <br><br><img src="./Images/Instructions/btnVD.webp" style="height:30px"> : Анулира последната продажба
+
+            <br><br> <img src="./Images/Instructions/btnSt.webp" style="height:30px"> : Индицира и отпечатва междинната сума в бона
+
+            <br><br> <img src="./Images/Instructions/btnTotal.webp" style="height:30px"> : Приключва касовия бон.
+
+            <br><br> <img src="./Images/Instructions/btn%-.webp" style="height:30px"> : Отпечатва дубликат
+
+            <br><br> СУМА, <img src="./Images/Instructions/btn%+.webp" style="height:30px"> : Отпечатва служебно въведена сума
+
+            <br><br> СУМА, <img src="./Images/Instructions/btn%-.webp" style="height:30px"> : Отпечатва служебно изведена сума
+
         </div>
-        <!--FISCAL+-->
-        <button onclick="ShowFunc('acc2')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Fiscal+"</button>
+        <!--ReportZ-->
+        <button onclick="ShowFunc('acc2')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Дневен отчет с нулиране</button>
         <div id="acc2" class="w3-container w3-hide w3-mobile">
-            <p>Пакетът Fiscal+ е подходящ за малък и/или среден търговски обект като включва всички модули, предназначени за работа в магазин или ресторант, където има инсталирани две работни места. Пакетът включва пълна комплектация за две работни места:
-            </p>
-            <ul class="w3-ul">
-                <li>1 x Microinvest Склад Pro</li>
-                <li>1 x Microinvest Склад Pro Light (ресторант или търговски обект)</li>
-                <li>1 x Microinvest Архиватор Pro</li>
-                <li>1 x Едногодишен договор за облачно архивиране*</li>
-                <li>1 х лиценз за работа с MSSQL база данни**</li>
-                <li>2 x Хардуерен лиценз</li>
-            </ul>
-            <p>Стандартна цена: 1100 лв.<br>
-                <strong>Пакетна цена: 870 лв.</strong>
-            </p>
+            <img src="./Images/Instructions/btnMode.webp" style="height: 30px; width: 30px">, <img src="./Images/Instructions/btnMode.webp" style="height: 30px; width: 30px"> : Превключва режимите на работа.<br>
+            <br>
+            <img src="./Images/Instructions/dspMode1.webp" class="displayMode">
+            <br><br>
+            <img src="./Images/Instructions/dspModeOld1.webp" class="displayMode">
+
+            <br><br> Парола: <img src="./Images/Instructions/btn1.webp" style="height: 30px; width: 30px"> <img src="./Images/Instructions/btn1.webp" style="height: 30px; width: 30px"> <img src="./Images/Instructions/btn1.webp" style="height: 30px; width: 30px">
+            <img src="./Images/Instructions/btn1.webp" style="height: 30px; width: 30px"> <img src="./Images/Instructions/btn1.webp" style="height: 30px; width: 30px">
+            <br><br> <img src="./Images/Instructions/btnTotal.webp" style="width: 30px"> : Отпечатва дневен отчет с нулиране.
         </div>
-        <!--HOTEL+RESTAURANT-->
-        <button onclick="ShowFunc('acc3')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Хотел+Ресторант"</button>
+        <!--ReportX-->
+        <button onclick="ShowFunc('acc3')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Периодичен отчет</button>
         <div id="acc3" class="w3-container w3-hide w3-mobile">
-            <p>Пакет „Хотел+Ресторант“ е подходящ за хотел с ресторант, бар или лоби, като включва всички модули за управление на дейностите на рецепция и по обработка на поръчки в ресторанта или лоби бара. Допълнително удобство е, че хотелският софтуер
-                предлага връзка в реално време с ресторантския софтуер, като по този начин може да се извършва начисляване на сметки към стая и възможност за приключване на сметка от Microinvest Хотел Pro.
-            </p>
-            <ul class="w3-ul">
-                <li>1 х Microinvest Хотел Pro</li>
-                <li>1 x Microinvest Склад Pro</li>
-                <li>1 x Microinvest Склад Pro Light - ресторант</li>
-                <li>1 x Microinvest Архиватор Pro</li>
-                <li>1 х лиценз за работа с MSSQL база данни**</li>
-                <li>3 x Хардуерен лиценз</li>
-            </ul>
-            <p>Стандартна цена: 1705 лв.<br>
-                <strong>Пакетна цена: 1476 лв.</strong>
-            </p>
+            <img src="./Images/Instructions/btnMode.webp" style="height: 30px; width: 30px">, <img src="./Images/Instructions/btnMode.webp" style="height: 30px; width: 30px">, <img src="./Images/Instructions/btnMode.webp" style="height: 30px; width: 30px">            : Превключва режимите на работа.<br>
+            <br>
+            <img src="./Images/Instructions/dspMode2.webp" class="displayMode">
+            <br><br>
+            <img src="./Images/Instructions/dspModeOld2.webp" class="displayMode">
+
+            <br><br> Парола: <img src="./Images/Instructions/btn2.webp" style="height: 30px; width: 30px"> <img src="./Images/Instructions/btn2.webp" style="height: 30px; width: 30px"> <img src="./Images/Instructions/btn2.webp" style="height: 30px; width: 30px">
+            <img src="./Images/Instructions/btn2.webp" style="height: 30px; width: 30px"> <img src="./Images/Instructions/btn2.webp" style="height: 30px; width: 30px">
+            <br><br><img src="./Images/Instructions/btn1.webp" style="height: 30px; width: 30px"> <img src="./Images/Instructions/btn1.webp" style="height: 30px; width: 30px"> <img src="./Images/Instructions/btnSt.webp" style="height: 30px; width: 30px">,
+            НАЧАЛНА ДАТА (ДДММГГ), <img src="./Images/Instructions/btnQty.webp" style="height: 30px; width: 30px">, КРАЙНА ДАТА (ДДММГГ)
+
+
+            <br><br> <img src="./Images/Instructions/btnVD.webp" style="width: 30px"> : Отпечатва съкратен периодичен отчет по данъчни групи за избрания период.
+            <br><br> <img src="./Images/Instructions/btnDep.webp" style="width: 30px"> : Отпечатва съкратен периодичен отчет по департаменти 1..9 за избрания период
+
         </div>
-        <!--TARGET-->
-        <button onclick="ShowFunc('acc4')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Target+"</button>
+        <!--Storno-->
+        <button onclick="ShowFunc('acc4')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Сторниране на документи</button>
         <div id="acc4" class="w3-container w3-hide w3-mobile">
-            <p>Пакетът Target+ е подходящ за малък търговски обект и включва всички модули, предназначени за работа в магазин, където има инсталиран само един компютър. Пакетът включва пълна комплектация за едно работно място:
-            </p>
-            <ul class="w3-ul">
-                <li>1 x Microinvest Склад Pro</li>
-                <li>1 x Microinvest Склад Pro Light</li>
-                <li>1 x Microinvest Архиватор Pro</li>
-                <li>1 х лиценз за работа с MSSQL база данни</li>
-                <li>1 x Хардуерен лиценз</li>
-            </ul>
-            <p>
-                <strong>Пакетна цена: 800 лв.</strong>
-            </p>
+            <h2>ВАЖНО! Сторно операция се прави до 7 дена след издаването на касовата бележка</h2>
+            <img src="./Images/Instructions/btnMode.webp" style="height: 30px; width: 30px"> : Превключва режимите на работа.<br>
+            <br>
+            <img src="./Images/Instructions/dspMode.webp" class="displayMode">
+            <br><br>
+            <img src="./Images/Instructions/dspModeOld.webp" class="displayMode">
+            <br><br>Стандартна парола:
+            <img src="./Images/Instructions/btn0.webp" style="height: 30px; width: 30px">, <img src="./Images/Instructions/btnTotal.webp" style="width:30px">
+
+            <br><br>
+            <img src="./Images/Instructions/btnVD.webp" style="height: 30px; width: 30px"> : Сторно операция!
+
+            <br><br> Изберете една от следните опции:<br>
+            <img src="./Images/Instructions/btn0.webp" style="height: 30px; width: 30px"> : Сторно причина: Операторска грешка.
+            <br><br>
+            <img src="./Images/Instructions/btn1.webp" style="height: 30px; width: 30px"> : Сторно причина: Връщане/Рекламация.
+            <br><br>
+            <img src="./Images/Instructions/btn2.webp" style="height: 30px; width: 30px"> : Сторно причина: Намаление данъчна основа.
+
+            <br><br> Изберете една от следните опции:<br>
+            <img src="./Images/Instructions/btn0.webp" style="height: 30px; width: 30px"> : Сторниране на стандартна бележка.
+            <br><br>
+            <img src="./Images/Instructions/btn1.webp" style="height: 30px; width: 30px"> : Сторниране на фактура.
+
+            <br><br>Следващите данни се вземат от документа, който сторнирате.<br><br>
+
+            <br><br> НОМЕР НА ДОКУМЕНТ (ограден със
+            <span style="color:#007e00">ЗЕЛЕН</span> цвят на примерния касов бон по-долу),
+            <img src="./Images/Instructions/btnTotal.webp" style="height: 30px;"> : Въвеждане на номер на Документ (ВНИМАНИЕ! Този номер е уникален за всеки документ)
+
+            <br><br> ДАТА НА ДОКУМЕНТ (оградена със
+            <span style="color:#0000b4">СИН</span> цвят на примерния касов бо по-долу),
+            <img src="./Images/Instructions/btnTotal.webp" style="height: 30px;"> : Въвеждане на точна дата на Документ.
+
+            <br><br> ЧАС НА ДОКУМЕНТ (ограден със
+            <span style="color:#ff9100">ОРАНЖЕВ</span> цвят на примерния касов бо по-долу),
+            <img src="./Images/Instructions/btnTotal.webp" style="height: 30px;"> : Въвеждане на точен час на Документ.
+
+            <br><br> ИНД. НОМЕР НА ФИСКАЛНАТА ПАМЕТ (ограден със
+            <span style="color:#ff0000">ЧЕРВЕН</span> цвят на примерния касов бо по-долу),
+            <img src="./Images/Instructions/btnTotal.webp" style="height: 30px;"> : Въвеждане на номер на фискалната памет. (ВНИМАНИЕ! Този номер е уникален за всяко фискално устройство)
+
+            <br><br> УНП, ако устройството Ви е свързано със СУПТО,
+            <img src="./Images/Instructions/btnTotal.webp" style="height: 30px;"> : Въвеждане на УНП. Ако не работите със СУПТО, не въвеждайте нищо, <img src="./Images/Instructions/btnTotal.webp" style="height: 30px;">
+
+            <br><br> УНП, ако устройството Ви е свързано със СУПТО,
+            <img src="./Images/Instructions/btnTotal.webp" style="height: 30px;"> : Въвеждане на УНП. Ако не работите със СУПТО, не въвеждайте нищо, <img src="./Images/Instructions/btnTotal.webp" style="height: 30px;">
+            <br><br>
+            <img src="Images/Instructions/ExampleReceipt.webp" class="displayMode">
+            <br><br> На екрана се изписва "СТОРНО !". Следва да въведете документа наново, по същия начин както при първоначалното му издаване. За повече информация вижте "Как да издадем касов бон"
+
         </div>
-        <!--ONLINESHOP-->
-        <button onclick="ShowFunc('acc5')" class="w3-button w3-block w3-left-align w3-hover-dark-gray">Пакет "Online Магазин"</button>
-        <div id="acc5" class="w3-container w3-hide w3-mobile">
-            <p>Пакетът "Онлайн магазин" е подходящ за електронна търговия и включва всички модули, предназначени за обработка и приемане на поръчки от електронен магазин, с осигурена връзка със СУПТО софтуер. Пакетът включва:
-            </p>
-            <ul class="w3-ul">
-                <li>1 x Microinvest Склад Pro</li>
-                <li>1 x Microinvest Utility Center Plus</li>
-                <li>1 x Microinvest Архиватор Pro</li>
-                <li>1 х лиценз за работа с MSSQL база данни</li>
-            </ul>
-            <p>Стандартна цена: 1285 лв.<br>
-                <strong>Пакетна цена: 915 лв.</strong>
-            </p>
-        </div>
-    </div>
-    <script src="ShowFunc.js"></script>
+        <script src="ShowFunc.js"></script>
 </body>
 
 </html>
