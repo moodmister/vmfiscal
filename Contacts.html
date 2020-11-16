@@ -23,58 +23,60 @@
 </head>
 
 <body>
-    <div class="w3-bar w3-black" style="position:fixed; z-index:10">
-        <a href="index.html" class="w3-bar-item w3-button">Начало</a>
-        <div class="w3-dropdown-hover">
-            <button class="w3-bar-item w3-button w3-hide-small">Продукти</button>
-            <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
-                <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
-                <a href="./FPrinters.html" class="w3-bar-item w3-button">Фискални принтери</a>
-                <a href="./POS.html" class="w3-bar-item w3-button">POS принтери</a>
-            </div>
-        </div>
-        <div class="w3-dropdown-hover">
-            <button class="w3-bar-item w3-button w3-hide-small">Microinvest продукти</button>
-            <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
-                <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
-                <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
-            </div>
-        </div>
-        <a href="./Services.html" class="w3-bar-item w3-button w3-hide-small">Други услуги и продукти</a>
-        <a href="https://www.tita.bg/laws/44" target="_blank" class="w3-bar-item w3-button w3-hide-small">Наредба Н-18</a>
-        <a href="./Contacts.html" class="w3-bar-item w3-button w3-hide-small">Контакти</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="ShowFunc('demo')">&#9776;</a>
-    </div>
+  <!--Navbar-->
+  <div class="w3-bar w3-black" style="position:fixed; z-index:10">
+      <a href="./index.html" class="w3-bar-item w3-button">Начало</a>
+      <div class="w3-dropdown-hover">
+          <button class="w3-bar-item w3-button w3-hide-small" style="background-color:#005c06; font-weight:bold">Продукти</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
+              <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
+              <a href="./FPrinters.html" class="w3-bar-item w3-button">Фискални принтери</a>
+              <a href="./POS.html" class="w3-bar-item w3-button">POS принтери</a>
+          </div>
+      </div>
+      <div class="w3-dropdown-hover">
+          <button class="w3-bar-item w3-button w3-hide-small">Microinvest продукти</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px; position:fixed;">
+              <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+              <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+          </div>
+      </div>
+      <a href="./Services.html" class="w3-bar-item w3-button w3-hide-small">Други услуги и продукти</a>
+      <a href="https://www.tita.bg/laws/44" target="_blank" class="w3-bar-item w3-button w3-hide-small">Наредба Н-18</a>
+      <div class="w3-dropdown-hover">
+          <button class="w3-bar-item w3-button w3-hide-small">Полезни връзки</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border" style="margin-top:35px;position:fixed">
+            <a href="./Help.html" class="w3-bar-item w3-button">Инструкции за експлоатация</a>
+            <a href="./FAQ.html" class="w3-bar-item w3-button">Често задавани въпроси</a>
+          </div>
+      </div>
+      <a href="./Contacts.html" class="w3-bar-item w3-button w3-hide-small">Контакти</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="ShowFunc('demo')">&#9776;</a>
+  </div>
 
-    <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-top:35px; position:fixed">
-        <button onclick="ShowFunc('Demo1')" class="w3-button w3-block w3-left-align">Продукти</button>
-        <div id="Demo1" class="w3-container w3-hide">
-            <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
-            <a href="./FPrinters.html" class="w3-bar-item w3-button">Фискални принтери</a>
-            <a href="./POS.html" class="w3-bar-item w3-button">POS принтери</a>
-        </div>
-        <button onclick="ShowFunc('Demo2')" class="w3-button w3-block w3-left-align">Microinvest продукти</button>
-        <div id="Demo2" class="w3-container w3-hide">
-            <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
-            <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
-        </div>
-        <a href="./Services.html" class="w3-bar-item w3-button">Други услуги и продукти</a>
-        <a href="https://www.tita.bg/laws/44" target="_blank" class="w3-bar-item w3-button">Наредба Н-18</a>
-        <a href="./Contacts.html" class="w3-bar-item w3-button">Контакти</a>
-    </div>
-
-    <div class="w3-container hcontainer w3-center" style="padding-top:100px;padding-bottom: 100px;">
-        <div class="w3-half w3-mobile">
-            <h2>Контакти</h2>
-            <p>Алфа - ВМ Консулт ЕООД<br> e-mail: info@betaconsultbg.com<br> Тел.: 0894 631 899<br> Тел.: 0888 615 529<br> Русе, пл. Оборище 9, ет.6<br> офис Бета Консулт</p>
-        </div>
-        <div class="w3-half w3-mobile w3-centered">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVMFiscal%2F&tabs=messages&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500"
-                style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-        </div>
-    </div>
-    <script src="ShowFunc.js">
-    </script>
+  <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-top:35px; position:fixed;z-index:9">
+      <button onclick="ShowFunc('Demo1')" class="w3-button w3-block w3-left-align">Продукти</button>
+      <div id="Demo1" class="w3-container w3-hide">
+          <a href="./CashRegs.html" class="w3-bar-item w3-button">Касови апарати</a>
+          <a href="./FPrinters.html" class="w3-bar-item w3-button">Фискални принтери</a>
+          <a href="./POS.html" class="w3-bar-item w3-button">POS принтери</a>
+      </div>
+      <button onclick="ShowFunc('Demo2')" class="w3-button w3-block w3-left-align">Microinvest продукти</button>
+      <div id="Demo2" class="w3-container w3-hide">
+          <a href="./Software.html" class="w3-bar-item w3-button">Софтуер</a>
+          <a href="./Packs.html" class="w3-bar-item w3-button">Пакети</a>
+      </div>
+      <a href="./Services.html" class="w3-bar-item w3-button">Други услуги и продукти</a>
+      <a href="https://www.tita.bg/laws/44" target="_blank" class="w3-bar-item w3-button">Наредба Н-18</a>
+      <button onclick="ShowFunc('Demo3')" class="w3-button w3-block w3-left-align">Полезни връзки</button>
+      <div id="Demo3" class="w3-container w3-hide">
+          <a href="./Help.html" class="w3-bar-item w3-button">Инструкции за експлоатация</a>
+          <a href="./FAQ.html" class="w3-bar-item w3-button">Често задавани въпроси</a>
+      </div>
+      <a href="./Contacts.html" class="w3-bar-item w3-button">Контакти</a>
+  </div>
+  <script src="ShowFunc.js"></script>
+  <!--/Navbar-->
 </body>
 
 </html>
